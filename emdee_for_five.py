@@ -3,11 +3,11 @@ import re
 import hashlib
 
 
-url = "The url is from a Hackthebox challenge"
+url = "The url is from a CTFs platform challenge"
 
 ### Get request
 r= requests.session()
-x = r.get('The url is from a Hackthebox challenge')
+x = r.get('The url is from a CTFs platform challenge')
 x = re.search("<h3 align='center'>+.*?</h3>", x.text)
 
 ### Remove unnecessary informations
